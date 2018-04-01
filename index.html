@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Surface nanobubbles</title>
+    <meta name="description" content="WebSlides Cheat Sheet. A quick reference guide for beginners. This tutorial contains hundreds of HTML/CSS examples.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description" content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-black-blue aligncenter">
+         <span class="background dark" style="background-image:url('static/images/bubbles.jpg')"></span>
+          <!--.wrap = container (width: 90%) with fadein animation -->
+          <div class="wrap">
+            <p class="text-subtitle">Nanofluidics presentation</p>
+            <h1 class="text-landing">Surface nanobubbles</h1>
+          </div>
+          <!-- .end .wrap -->
+          <footer>
+            <div class="wrap">
+              <p>
+                <span class="alignright">
+                  Leroy Tromp
+                </span>
+              </p>
+            </div>
+          </footer>
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="size-30 alignleft" style="margin-right: 2em; margin-top: 4em;">
+              <img src="static/images/nanobubble.jpg" alt="Graph">
+              <p>
+                <strong>Figure</strong>:<br>
+                3D topographic TM AFM image of a surface nanobubble on HOPG<sup>[6]</sup>.
+              </p>
+            </div>
+            <div class="size-60 alignleft">
+              <h3><strong>What is the nanobubble mystery?</strong></h3>
+              <p class="text-intro">Introduction</p>
+              <p>
+                Experiments show us that very small stable bubbles, known as
+                nanobubbles, can be present on surfaces despite well founded
+                theoretical considerations that predict otherwise.
+              </p>
+              <p class="text-pull-right">Physicists have long debated whether they really exists.</p>
+              <p>
+                Due to the high Laplace pressure inside the bubbles that drives the
+                gas into the liquid, the lifetime of surface nanobubbles is expected
+                to be on the order of microseconds, rather than
+                the many hours or even days observed experimentally.
+              </p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h2><strong>Bubbles</strong> (Young–Laplace + Henry's law)</h2>
+            <hr>
+            <div class="grid ms">
+              <div class="column">
+                <h3>Young-Laplace equation</h3>
+                <p>
+                  The increase in pressure inside a spherical bubble due to the
+                  surface tension is described by the Young–Laplace equation,
+                  which for a spherical object is given by
+                </p>
+                <p>\[ \Delta p = \frac{2 \gamma}{R} \]</p>
+                <p>Where \( \gamma \) is the surface tension of the bubble and \( R \) is the radius of curvature of the bubble.</p>
+              </div>
+              <div class="column">
+                <h3>Henry's law</h3>
+                <p>In chemistry, Henry's law is a gas law that states that the amount of dissolved gas is proportional to its partial pressure in the gas phase.</p>
+              </div>
+            </div>
+            <!--end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h3>The Young–Laplace + Henry feedback cycle</h3>
+            <p class="text-intro">This positive feedback cycle can rapidly lead to the dissolution and disappearance of small bubbles.</p>
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li>
+                <span>
+                  <svg class="fa-google-plus">
+                    <use xlink:href="#fa-circle-thin"></use>
+                  </svg>
+                </span>
+                <h2>01. Pressure</h2>
+                <p>The pressure within a bubble is higher than the surroundings.</p>
+              </li>
+              <li>
+                <div class="process step-2"></div>
+                <span>
+                  <svg class="fa-bug">
+                    <use xlink:href="#fa-circle-thin"></use>
+                  </svg>
+                </span>
+                <h2>02. Solubility</h2>
+                <p>The elevation in pressure results in an increase in solubility of the gases that make up the bubble in the surrounding liquid.</p>
+              </li>
+              <li>
+                <div class="process step-3"></div>
+                <span>
+                  <svg class="fa-shield">
+                    <use xlink:href="#fa-circle-thin"></use>
+                  </svg>
+                </span>
+                <h2>03. Diffusion</h2>
+                <p>Gas leaves the bubble by diffusion and is solvated in the liquid in order to establish equilibrium.</p>
+              </li>
+              <li>
+                <div class="process step-4"></div>
+                <span>
+                  <svg class="fa-volume-off">
+                    <use xlink:href="#fa-circle-thin"></use>
+                  </svg>
+                </span>
+                <h2>04. Size</h2>
+                <p>The loss of gas from the bubble leads to a decrease in bubble size and an increase in bubble pressure.</p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <img class="alignleft size-40" src="static/images/fig1.gif" alt="Graph">
+            <h2>Bubble lifetime</h2>
+            <p class="text-intro">Theoretical predictions</p>
+            <p>
+              For micron sized bubbles the theory predicts that they should
+              disappear within tens of milliseconds, and that the attachment of
+              the bubble to a surface should only have a small effect on the bubble lifetime.
+            </p>
+            <p>
+              <strong>Figure</strong>:<br>
+              Theoretically predicted bubble lifetime for a typical bubble in water, as a function of starting radius and gas type<sup>[1]</sup>.
+            </p>
+            <hr>
+            <p class="aligncenter"><small><code>[1]</code> Vincent Stuart James Craig. Very small bubbles at surfaces–the nanobubble puzzle. <i>Soft Matter</i>, 7:40–48, 2011.</small></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <img class="alignright" src="static/images/afmbubbles.gif" alt="iPhone">
+            <h2>Surface nanobubbles</h2>
+            <p class="text-intro">Experimental evidence</p>
+            <p>
+              The most direct evidence for the existence of these exceptionally
+              stable nanobubbles is provided by AFM images.
+            </p>
+            <p>
+              Because of the solid basis on which the classical
+              theories are built, early reports of the existence of stable
+              nanobubbles at surfaces were greeted with scepticism.
+            </p>
+            <p>
+              <strong>Figure</strong>:<br>
+              AFM tapping mode images of nanobubbles on HOPG in water.<br>
+              Image size 10 μm &#10799; 10 μm<sup>[1]</sup>.
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="content-left">
+              <h3>Experimental challenges</h3>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>Deformability</h2>
+                    Imaging artifacts caused by the deformability of nanobubbles.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Contamination</h2>
+                    Nanobubble–AFM tip interactions could be affected by
+                    contaminants on the surface or at the gas–liquid interface.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>AFM tip</h2>
+                    It is difficult to determine the tip profile precisely and
+                    accurately in a non-destructive manner.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-right">
+              <img src="static/images/afmtip.jpg" alt="AFM tip" class="size-50 aligncenter">
+              <p>
+                <small>
+                  <strong>Figure</strong>:<br>
+                  Schematic illustration of AFM tip convolution in the measurement of a nanobubble<sup>[6]</sup>.
+                </small>
+              </p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h3>History of surface nanobubbles</h3>
+            <ul class="flexblock activity">
+              <li>
+                <a href="#" title="UX Designer at ACME">
+                  <div>
+                    <p class="year">
+                      2013
+                    </p>
+                    <p class="title">
+                      Joost H. Weijs and Detlef Lohse
+                    </p>
+                    <p class="summary">
+                      Presentation of a theoretical model for the exceptionally long
+                      lifetime of surface nanobubbles<sup>[2]</sup>.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="14 world famous buildings to inspire you">
+                  <p class="year">
+                    2001
+                  </p>
+                  <p class="title">
+                    James W. G. Tyrrell and Phil Attard
+                  </p>
+                  <p class="summary">
+                    Confirmation of presumed existence by direct AFM
+                    imaging of nanobubbles on water-immersed solid surfaces<sup>[3]</sup>.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Co-Founder of GAMMA">
+                  <p class="year">
+                    1994
+                  </p>
+                  <p class="title">
+                    John L. Parker <i>et al</i>
+                  </p>
+                  <p class="summary">
+                    First report of the existence of nanobubbles in literature<sup>[4]</sup>.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <blockquote class="text-quote">
+              <p>
+                The limited gas diffusion through the water in the far
+                field, the cooperative effect of nanobubble clusters, and
+                the pinned contact line of the nanobubbles lead to the
+                slow dissolution rate.
+              </p>
+              <p>
+                <cite>
+                  Joost H. Weijs and Detlef Lohse (2013)
+                </cite>
+              </p>
+            </blockquote>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3>Are nanobubbles artifacts?</h3>
+                <p class="text-intro">Optical imaging vs AFM</p>
+                <p>
+                  Identically prepared samples were imaged under the same conditions.
+                  Within limitations, the size distributions measured with both techniques are in good agreement
+                </p>
+                <p>
+                  <strong>Figure</strong>:<br>
+                  Comparison between the imaging of surface nanobubbles by interference-enhanced reflection microscopy and AFM<sup>[5]</sup>.
+                </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <img class="size-60" src="static/images/optafm.png" alt="Graph">
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <hr>
+            <p class="aligncenter"><small><code>[5]</code> Stefan Karpitschka <i>et al</i>. Nonintrusive optical visualization of surface nanobubbles. <i>Phys. Rev. Lett.</i>, 109:066102, Aug 2012.</small></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3>Pinned contact line</h3>
+                <p>
+                  The empirically verified pinned contact line of surface nanobubbles is crucial for
+                  long nanobubble lifetimes.
+                </p>
+                <p>\[ \Delta p = \frac{2 \gamma}{R} = \frac{2 \gamma}{R_b} \text{sin}\ \theta \]</p>
+                <p>
+                  For surface nanobubbles (\( \theta \) < 90&deg;), the
+                  internal pressure thus decreases as \( \theta \) decreases, providing
+                  a negative feedback in the dissolution process.
+                </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <img src="static/images/lohse.png" alt="Graph">
+                <p style="margin-top: 2em;">
+                  <strong>Figure</strong>:<br>
+                  Sketch of a liquid layer of thickness \( \ell \) in contact with
+                  a solid (left). On the right a further enlargement of one
+                  nanobubble is shown.<sup>[2]</sup>.
+                </p>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <hr>
+            <p class="aligncenter"><small><code>[2]</code> Joost H. Weijs and Detlef Lohse. Why surface nanobubbles live for hours. <i>Phys. Rev. Lett.</i>, 110:054501, Jan 2013.</small></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3>Limited far field diffusion</h3>
+                <p>
+                  The characteristic time scale for diffusion through the water layer should be modified by
+                  using \( \ell \) as the relevant length scale instead of the bubble radius \( R \).
+                </p>
+                <p>\[ \tau = \frac{\ell^2}{D} \sim 10^5\ \text{s} \approx 28\ \text{hours} \]</p>
+                <p>
+                  Using typical parameters that apply to experiments on surface nanobubbles
+                  ( \( \ell \) = 10<sup>-2</sup> m and \( D \) = 10<sup>-9</sup>  m<sup>2</sup>/s), we recover
+                  values similar to the lifetimes obtained in experiments.
+                </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <img src="static/images/lohse.png" alt="Graph">
+                <p style="margin-top: 2em;">
+                  <strong>Figure</strong>:<br>
+                  Sketch of a liquid layer of thickness \( \ell \) in contact with
+                  a solid (left). On the right a further enlargement of one
+                  nanobubble is shown.<sup>[2]</sup>.
+                </p>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3>The extraordinarily long lifetimes of surface nanobubbles.</h3>
+                <p><code>mystery solved</code> (mostly)</p>
+                <p>
+                  The theory relies only on well-established, and proven
+                  concepts such as diffusion and Henry’s law.
+                  Furthermore, the theory only uses confirmed nanobubble
+                  properties, namely the pinned contact line of
+                  nanobubbles and the fact that
+                  nanobubbles exist in relatively high coverage fractions at the
+                  liquid–solid interface.
+                </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <blockquote class="text-quote">
+                  <p>
+                    The correct
+                    determination of the radius of curvature as well as the
+                    unequivocal assignment of the nanoscale features to gas-filled
+                    cavities remain central objectives still to be solved.
+                  </p>
+                  <p>
+                    <cite>
+                      Holger Schönherr et al (2016)
+                    </cite>
+                  </p>
+                </blockquote>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h2>References</h2>
+            <ul class="flexblock activity">
+              <li>
+                <p>
+                  <small><code>[1]</code> Vincent Stuart James Craig. Very small bubbles at surfaces–the nanobubble puzzle. <i>Soft Matter</i>, 7:40–48, 2011.</small><br />
+                  <small><code>[2]</code> Joost H. Weijs and Detlef Lohse. Why surface nanobubbles live for hours. <i>Phys. Rev. Lett.</i>, 110:054501, Jan 2013.</small><br />
+                  <small><code>[3]</code> James W. G. Tyrrell and Phil Attard. Images of nanobubbles on hydrophobic surfaces and their interactions. <i>Phys. Rev. Lett.</i>, 87:176104, Oct 2001.</small><br />
+                  <small><code>[4]</code> John L. Parker, Per M. Claesson and Phil Attard. Bubbles, cavities, and the long-ranged attraction between hydrophobic surfaces. <i>J. Phys. Chem.</i>, 98(34):8468–8480, 1994.</small><br />
+                  <small><code>[5]</code> Stefan Karpitschka <i>et al</i>. Nonintrusive optical visualization of surface nanobubbles. <i>Phys. Rev. Lett.</i>, 109:066102, Aug 2012.</small><br />
+                  <small><code>[6]</code> Holger Schönherr et al. Surface nanobubbles studied by atomic force microscopy techniques: Facts, fiction, and open questions. <i>Jpn. J. Appl. Phys</i>. 55 08NA01, 2016.</small>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+  </body>
+</html>
